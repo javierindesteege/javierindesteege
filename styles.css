@@ -1,0 +1,48 @@
+body{
+	background-color: #020202;
+	z-index: 0;
+font-family: "Helvetica";
+}
+
+img{
+	max-width: 100%;
+}
+
+#rave{
+  background: white;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  mix-blend-mode:difference;
+  opacity: 50%;
+}
+#raveBtn{
+  margin: 0 auto;
+  border-radius: 0;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 15px;
+  bottom: 20px;
+  left: 20px;
+  position: fixed;
+  color: lightgrey;
+  text-decoration: none;
+
+}
+.on{
+  -webkit-animation: raveOn 0.5s infinite;
+}
+.off{
+  opacity: 0;
+}
+@-webkit-keyframes raveOn{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
